@@ -27,7 +27,7 @@ const rewards = [
 },
 
 {
-    title: "50 Tours",
+    title: "25 Tours",
     type: "spin",
     status: "available",
     badge: true,
