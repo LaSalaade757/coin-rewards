@@ -13,17 +13,8 @@ const rewards = [
     type: "spin",
     status: "available",
     badge: true,
-    date: "Publié le 16/07/2026",
-    url: "https://coinmaster-daily.com/?gift=2212078"
-},
-
-{
-    title: "50 Tours",
-    type: "spin",
-    status: "available",
-    badge: true,
-    date: "Publié le 16/07/2026",
-    url: "https://coinmaster-daily.com/?gift=2212076"
+    date: "17/07/2026",
+    url: "https://coinmaster-daily.com/?gift=2212094"
 },
 
 {
@@ -31,7 +22,52 @@ const rewards = [
     type: "spin",
     status: "available",
     badge: true,
-    date: "Publié le 16/07/2026",
+    date: "17/07/2026",
+    url: "https://coinmaster-daily.com/?gift=2212093"
+},
+
+{
+    title: "50 Tours",
+    type: "spin",
+    status: "available",
+    badge: true,
+    date: "17/07/2026",
+    url: "https://coinmaster-daily.com/?gift=2212086"
+},
+
+{
+    title: "50 Tours",
+    type: "spin",
+    status: "available",
+    badge: true,
+    date: "17/07/2026",
+    url: "https://coinmaster-daily.com/?gift=2212085"
+},
+
+{
+    title: "50 Tours",
+    type: "spin",
+    status: "available",
+    badge: false,
+    date: "16/07/2026",
+    url: "https://coinmaster-daily.com/?gift=2212078"
+},
+
+{
+    title: "50 Tours",
+    type: "spin",
+    status: "available",
+    badge: false,
+    date: "16/07/2026",
+    url: "https://coinmaster-daily.com/?gift=2212076"
+},
+
+{
+    title: "25 Tours",
+    type: "spin",
+    status: "available",
+    badge: false,
+    date: "16/07/2026",
     url: "https://coinmaster-daily.com/?gift=2212076"
 },
 
@@ -40,7 +76,7 @@ const rewards = [
     type: "spin",
     status: "available",
     badge: false,
-    date: "Publié le 16/07/2026",
+    date: "16/07/2026",
     url: "https://coinmaster-daily.com/?gift=2212071"
 },
 
@@ -49,7 +85,7 @@ const rewards = [
     type: "spin",
     status: "available",
     badge: false,
-    date: "Publié le 16/07/2026",
+    date: "16/07/2026",
     url: "https://coinmaster-daily.com/?gift=2212069"
 },
 
@@ -58,7 +94,7 @@ const rewards = [
     type: "spin",
     status: "available",
     badge: false,
-    date: "Publié le 16/07/2026",
+    date: "16/07/2026",
     url: "https://coinmaster-daily.com/?gift=2212068"
 },
 
@@ -67,7 +103,7 @@ const rewards = [
     type: "spin",
     status: "available",
     badge: false,
-    date: "Publié le 16/07/2026",
+    date: "16/07/2026",
     url: "https://coinmaster-daily.com/?gift=2212046"
 },
 
@@ -77,7 +113,7 @@ const rewards = [
     type: "spin",
     status: "available",
     badge: false,
-    date: "Publié le 16/07/2026",
+    date: "16/07/2026",
     url: "https://coinmaster-daily.com/?gift=2212045"
 },
 
@@ -86,7 +122,7 @@ const rewards = [
     type: "spin",
     status: "expired",
     badge: false,
-    date: "Publié le 15/07/2026",
+    date: "15/07/2026",
     url: "#"
 },
 
@@ -95,7 +131,7 @@ const rewards = [
     type: "spin",
     status: "expired",
     badge: false,
-    date: "Publié le 15/07/2026",
+    date: "15/07/2026",
     url: "#"
 },
 
@@ -104,7 +140,7 @@ const rewards = [
     type: "spin",
     status: "expired",
     badge: false,
-    date: "Publié le 15/07/2026",
+    date: "15/07/2026",
     url: "#"
 },
 
@@ -321,11 +357,55 @@ Les récompenses proviennent des liens officiels publiés par Coin Master.
 
     }
 
-    filteredRewards.forEach(reward=>{
+// Regrouper les récompenses par date
+const groupedRewards = {};
 
-        cards.innerHTML+=renderRewardCard(reward);
+filteredRewards.forEach(reward => {
+
+    if(!groupedRewards[reward.date]){
+
+        groupedRewards[reward.date] = [];
+
+    }
+
+    groupedRewards[reward.date].push(reward);
+
+});
+
+// Affichage des groupes
+Object.keys(groupedRewards).forEach(date => {
+
+    const rewardsOfDay = groupedRewards[date];
+
+cards.innerHTML += `
+
+<div class="dateSeparator">
+
+    <div class="left">
+
+        <span class="arrow">▼</span>
+
+        <span class="date">📅 ${date}</span>
+
+    </div>
+
+    <span class="count">
+
+        ${rewardsOfDay.length}
+
+    </span>
+
+</div>
+
+`;
+
+    rewardsOfDay.forEach(reward => {
+
+        cards.innerHTML += renderRewardCard(reward);
 
     });
+
+});
 
 }
 // =====================================================
