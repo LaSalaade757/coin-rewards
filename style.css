@@ -1074,3 +1074,31 @@ transform:translateY(0px);
     box-shadow:0 2px rgba(255,255,255,.4);
 
 }
+
+/* ==========================================================
+   RECOMPENSE DEJA RECUPEREE
+==========================================================*/
+
+.card.claimedCard{
+
+    opacity:.65;
+
+    filter:grayscale(.45);
+
+}
+
+.card.claimedCard .claimButton{
+
+    background:linear-gradient(
+    180deg,
+    #7ecb72,
+    #4da54b
+    );
+
+}
+
+.card.claimedCard .status{
+
+    background:#e9ffe8;
+
+}

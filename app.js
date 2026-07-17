@@ -191,6 +191,11 @@ let currentPage = "home";
 
 let currentFilter = "all";
 
+// Récompenses déjà récupérées
+let claimedRewards = JSON.parse(
+    localStorage.getItem("claimedRewards")
+) || [];
+
 // ---------- Fonctions utilitaires ----------
 
 function claimReward(url, status){
@@ -203,7 +208,21 @@ function claimReward(url, status){
 
     }
 
+    // Si la récompense n'est pas encore récupérée
+    if(!claimedRewards.includes(url)){
+
+        claimedRewards.push(url);
+
+        localStorage.setItem(
+            "claimedRewards",
+            JSON.stringify(claimedRewards)
+        );
+
+    }
+
     window.open(url, "_blank");
+
+    renderRewards();
 
 }
 
@@ -244,7 +263,7 @@ function renderRewardCard(reward){
 
     return `
 
-<div class="card">
+<div class="card ${claimedRewards.includes(reward.url) ? "claimedCard" : ""}">
 
 ${reward.badge ? '<div class="badge">NOUVEAU</div>' : ''}
 
@@ -265,12 +284,24 @@ ${reward.status==="available"
 </span>
 
 <button
-class="claimButton ${reward.status==="expired" ? "expired" : ""}"
+class="claimButton
+${reward.status==="expired" ? "expired" : ""}
+${claimedRewards.includes(reward.url) ? " claimed" : ""}"
+
 onclick="claimReward('${reward.url}','${reward.status}')">
 
-${reward.status==="available"
-? "🎁 Récupérer"
-: "Expiré"}
+${
+reward.status==="expired"
+
+? "Expiré"
+
+: claimedRewards.includes(reward.url)
+
+? "✔ Récupérée"
+
+: "🎁 Récupérer"
+
+}
 
 </button>
 
