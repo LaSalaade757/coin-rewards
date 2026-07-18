@@ -14,6 +14,16 @@ const rewards = [
     status: "available",
     badge: true,
     date: "18/07/2026",
+    time: "18:28",
+    url: "https://coinmaster-daily.com/?gift=2212152"
+},
+
+{
+    title: "50 Tours",
+    type: "spin",
+    status: "available",
+    badge: false,
+    date: "18/07/2026",
     time: "10:33",
     url: "https://coinmaster-daily.com/?gift=2212144"
 },
@@ -22,7 +32,7 @@ const rewards = [
     title: "50 Tours",
     type: "spin",
     status: "available",
-    badge: true,
+    badge: false,
     date: "18/07/2026",
     time: "10:33",
     url: "https://coinmaster-daily.com/?gift=2212143"
