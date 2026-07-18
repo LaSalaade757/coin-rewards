@@ -12,8 +12,39 @@ const rewards = [
     title: "50 Tours",
     type: "spin",
     status: "available",
-    badge: true,
+    badge: false,
+    date: "18/07/2026",
+    time: "08:46",
+    url: "https://coinmaster-daily.com/?gift=2212142"
+},
+
+{
+    title: "25 Tours",
+    type: "spin",
+    status: "available",
+    badge: false,
+    date: "18/07/2026",
+    time: "08:46",
+    url: "https://coinmaster-daily.com/?gift=2212141"
+},
+
+{
+    title: "50 Tours",
+    type: "spin",
+    status: "available",
+    badge: false,
+    date: "18/07/2026",
+    time: "08:46",
+    url: "https://coinmaster-daily.com/?gift=2212123"
+},
+
+{
+    title: "50 Tours",
+    type: "spin",
+    status: "available",
+    badge: false,
     date: "17/07/2026",
+    time: "15:42",
     url: "https://coinmaster-daily.com/?gift=2212117"
 },
 
@@ -23,6 +54,7 @@ const rewards = [
     status: "available",
     badge: false,
     date: "17/07/2026",
+    time: "15:42",
     url: "https://coinmaster-daily.com/?gift=2212111"
 },
 
@@ -32,6 +64,7 @@ const rewards = [
     status: "available",
     badge: false,
     date: "17/07/2026",
+    time: "15:42",
     url: "https://coinmaster-daily.com/?gift=2212107"
 },
 
@@ -41,6 +74,7 @@ const rewards = [
     status: "available",
     badge: false,
     date: "17/07/2026",
+    time: "15:42",
     url: "https://coinmaster-daily.com/?gift=2212106"
 },
 
@@ -50,6 +84,7 @@ const rewards = [
     status: "available",
     badge: false,
     date: "17/07/2026",
+    time: "15:42",
     url: "https://coinmaster-daily.com/?gift=2212094"
 },
 
@@ -59,6 +94,7 @@ const rewards = [
     status: "available",
     badge: false,
     date: "17/07/2026",
+    time: "15:42",
     url: "https://coinmaster-daily.com/?gift=2212093"
 },
 
@@ -68,6 +104,7 @@ const rewards = [
     status: "available",
     badge: false,
     date: "17/07/2026",
+    time: "15:42",
     url: "https://coinmaster-daily.com/?gift=2212086"
 },
 
@@ -77,80 +114,38 @@ const rewards = [
     status: "available",
     badge: false,
     date: "17/07/2026",
+    time: "15:42",
     url: "https://coinmaster-daily.com/?gift=2212085"
 },
 
 {
     title: "50 Tours",
     type: "spin",
-    status: "available",
+    status: "expired",
     badge: false,
     date: "16/07/2026",
-    url: "https://coinmaster-daily.com/?gift=2212078"
+    time: "15:42",
+    url: "#"
 },
 
 {
     title: "50 Tours",
     type: "spin",
-    status: "available",
+    status: "expired",
     badge: false,
     date: "16/07/2026",
-    url: "https://coinmaster-daily.com/?gift=2212076"
+    time: "15:42",
+    url: "#"
 },
 
 {
     title: "25 Tours",
     type: "spin",
-    status: "available",
+    status: "expired",
     badge: false,
     date: "16/07/2026",
-    url: "https://coinmaster-daily.com/?gift=2212076"
-},
-
-{
-    title: "50 Tours",
-    type: "spin",
-    status: "available",
-    badge: false,
-    date: "16/07/2026",
-    url: "https://coinmaster-daily.com/?gift=2212071"
-},
-
-{
-    title: "50 Tours",
-    type: "spin",
-    status: "available",
-    badge: false,
-    date: "16/07/2026",
-    url: "https://coinmaster-daily.com/?gift=2212069"
-},
-
-{
-    title: "50 Tours",
-    type: "spin",
-    status: "available",
-    badge: false,
-    date: "16/07/2026",
-    url: "https://coinmaster-daily.com/?gift=2212068"
-},
-
-{
-    title: "50 Tours",
-    type: "spin",
-    status: "available",
-    badge: false,
-    date: "16/07/2026",
-    url: "https://coinmaster-daily.com/?gift=2212046"
-},
-
-
-{
-    title: "50 Tours",
-    type: "spin",
-    status: "available",
-    badge: false,
-    date: "16/07/2026",
-    url: "https://coinmaster-daily.com/?gift=2212045"
+    time: "15:42",
+    url: "#"
 },
 
 {
@@ -158,7 +153,48 @@ const rewards = [
     type: "spin",
     status: "expired",
     badge: false,
-    date: "15/07/2026",
+    date: "16/07/2026",
+    time: "15:42",
+    url: "#"
+},
+
+{
+    title: "50 Tours",
+    type: "spin",
+    status: "expired",
+    badge: false,
+    date: "16/07/2026",
+    time: "15:42",
+    url: "#"
+},
+
+{
+    title: "50 Tours",
+    type: "spin",
+    status: "expired",
+    badge: false,
+    date: "16/07/2026",
+    time: "15:42",
+    url: "#"
+},
+
+{
+    title: "50 Tours",
+    type: "spin",
+    status: "expired",
+    badge: false,
+    date: "16/07/2026",
+    time: "15:42",
+    url: "#"
+},
+
+{
+    title: "50 Tours",
+    type: "spin",
+    status: "expired",
+    badge: false,
+    date: "16/07/2026",
+    time: "15:42",
     url: "#"
 },
 
@@ -168,6 +204,7 @@ const rewards = [
     status: "expired",
     badge: false,
     date: "15/07/2026",
+    time: "15:42",
     url: "#"
 },
 
@@ -177,6 +214,17 @@ const rewards = [
     status: "expired",
     badge: false,
     date: "15/07/2026",
+    time: "15:42",
+    url: "#"
+},
+
+{
+    title: "50 Tours",
+    type: "spin",
+    status: "expired",
+    badge: false,
+    date: "15/07/2026",
+    time: "15:42",
     url: "#"
 },
 
@@ -217,7 +265,7 @@ function claimReward(url, status){
 
     }
 
-    // Si la récompense n'est pas encore récupérée
+    // Sauvegarde la récompense récupérée
     if(!claimedRewards.includes(url)){
 
         claimedRewards.push(url);
@@ -229,9 +277,62 @@ function claimReward(url, status){
 
     }
 
+    // Ouvre le lien
     window.open(url, "_blank");
 
+    // Rafraîchit l'affichage
     renderRewards();
+
+}
+
+function getTimeAgo(reward){
+
+    const now = new Date();
+
+    const [day, month, year] = reward.date.split("/");
+    const [hour, minute] = reward.time.split(":");
+
+    const published = new Date(
+        year,
+        month - 1,
+        day,
+        hour,
+        minute
+    );
+
+    const diff = Math.floor((now - published) / 1000);
+
+    if(diff < 60){
+
+        return "À l'instant";
+
+    }
+
+    if(diff < 3600){
+
+        const minutes = Math.floor(diff / 60);
+
+        return `Il y a ${minutes} min`;
+
+    }
+
+    if(diff < 86400){
+
+        const hours = Math.floor(diff / 3600);
+
+        return `Il y a ${hours} heure${hours > 1 ? "s" : ""}`;
+
+    }
+
+    const days = Math.floor(diff / 86400);
+
+    if(days === 1){
+
+        return "Hier";
+
+    }
+
+    return `Il y a ${days} jours`;
 
 }
 
@@ -289,6 +390,12 @@ ${reward.status==="available"
 <span class="time">
 
 📅 ${reward.date}
+
+</span>
+
+<span class="publishTime">
+
+🕒 ${getTimeAgo(reward)}
 
 </span>
 

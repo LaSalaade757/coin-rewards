@@ -502,13 +502,22 @@ color:#d21b1b;
 
 /* date */
 
-.time{
+.time,
+.publishTime{
 
 display:block;
 
 font-size:14px;
 
 color:#8d6d42;
+
+margin-bottom:18px;
+
+}
+
+.publishTime{
+
+margin-top:-12px;
 
 margin-bottom:18px;
 
