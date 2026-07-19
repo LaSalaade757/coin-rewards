@@ -12,6 +12,36 @@ const rewards = [
     title: "50 Tours",
     type: "spin",
     status: "available",
+    badge: true,
+    date: "19/07/2026",
+    time: "10:11",
+    url: "https://coinmaster-daily.com/?gift=2212172"
+},
+
+{
+    title: "50 Tours",
+    type: "spin",
+    status: "available",
+    badge: true,
+    date: "19/07/2026",
+    time: "10:11",
+    url: "https://coinmaster-daily.com/?gift=2212158"
+},
+
+{
+    title: "50 Tours",
+    type: "spin",
+    status: "available",
+    badge: true,
+    date: "19/07/2026",
+    time: "10:11",
+    url: "https://coinmaster-daily.com/?gift=2212157"
+},
+
+{
+    title: "50 Tours",
+    type: "spin",
+    status: "available",
     badge: false,
     date: "18/07/2026",
     time: "18:28",
@@ -71,81 +101,81 @@ const rewards = [
 {
     title: "50 Tours",
     type: "spin",
-    status: "available",
+    status: "expired",
     badge: false,
     date: "17/07/2026",
     time: "15:42",
-    url: "https://coinmaster-daily.com/?gift=2212117"
+    url: "#"
 },
 
 {
     title: "50 Tours",
     type: "spin",
-    status: "available",
+    status: "expired",
     badge: false,
     date: "17/07/2026",
     time: "15:42",
-    url: "https://coinmaster-daily.com/?gift=2212111"
+    url: "#"
 },
 
 {
     title: "50 Tours",
     type: "spin",
-    status: "available",
+    status: "expired",
     badge: false,
     date: "17/07/2026",
     time: "15:42",
-    url: "https://coinmaster-daily.com/?gift=2212107"
+    url: "#"
 },
 
 {
     title: "50 Tours",
     type: "spin",
-    status: "available",
+    status: "expired",
     badge: false,
     date: "17/07/2026",
     time: "15:42",
-    url: "https://coinmaster-daily.com/?gift=2212106"
+    url: "#"
 },
 
 {
     title: "50 Tours",
     type: "spin",
-    status: "available",
+    status: "expired",
     badge: false,
     date: "17/07/2026",
     time: "15:42",
-    url: "https://coinmaster-daily.com/?gift=2212094"
+    url: "#"
 },
 
 {
     title: "25 Tours",
     type: "spin",
-    status: "available",
+    status: "expired",
     badge: false,
     date: "17/07/2026",
     time: "15:42",
-    url: "https://coinmaster-daily.com/?gift=2212093"
+    url: "#"
 },
 
 {
     title: "50 Tours",
     type: "spin",
-    status: "available",
+    status: "expired",
     badge: false,
     date: "17/07/2026",
     time: "15:42",
-    url: "https://coinmaster-daily.com/?gift=2212086"
+    url: "#"
 },
 
 {
     title: "50 Tours",
     type: "spin",
-    status: "available",
+    status: "expired",
     badge: false,
     date: "17/07/2026",
     time: "15:42",
-    url: "https://coinmaster-daily.com/?gift=2212085"
+    url: "#"
 },
 
 {
